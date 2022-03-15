@@ -1,4 +1,3 @@
-Kflom Shre, [3/15/2022 9:00 AM]
 #include <stdio.h>
 #include <stdlib.h>
 /**
