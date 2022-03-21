@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 
 /**
  *swap_int - swap numbers function
