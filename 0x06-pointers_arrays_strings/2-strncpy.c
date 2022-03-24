@@ -1,27 +1,30 @@
 #include "main.h"
 
 /**
-* rot13 -  a function that encodes a string using rot13.
-* @s: An input string to encode using rot13
-* Return: An encode string
+* _strncpy -  function that copies a string..
+* @src: cadena a copiar
+* @dest: destino de la cadena.
+* @n: number.
+* Return: void
 */
-char *rot13(char *s)
-{
-int i = 0;
 
-while (s[i] != '\0')
+char *_strncpy(char *dest, char *src, int n)
 {
-while ((s[i] >= 'a' && s[i] <= 'z') 
-(s[i] >= 'A' && s[i] <= 'Z'))
+int i;
+
+i = 0;
+
+while (src[i] != '\0' && i < n)
 {
-if ((s[i] >= 'a' && s[i] <= 'm') 
-(s[i] >= 'A' && s[i] <= 'M'))
-s[i] += 13;
-else
-s[i] -= 13;
+dest[i] = src[i];
 i++;
 }
+
+while (i < n)
+{
+dest[i] = '\0';
 i++;
 }
-return (s);
+
+return (dest);
 }
