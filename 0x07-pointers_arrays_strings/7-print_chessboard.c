@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
   *print_chessboard - prints the chessboard.
   *@a: array of pointers.
