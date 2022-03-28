@@ -1,40 +1,27 @@
-#include<stdio.h>
-#include<conio.h>
-#include<graphics.h>
-void main(){
-int gr=DETECT,gm;
-int row,col,x=50,y=50,flag=0;
-initgraph(&gr,&gm,"C:\\TURBOC3\\BGI");
-printf("\t*********** CHESS BOARD **************\n");
-for(row=0;row<8;row++)
-{
+#include "main.h"
+/**
+ * print_chessboard - prints the chessboard
+ *
+ * @a: the row of the array
+ *
+ * Return: nothing
+ */
 
-for(col=1;col<=8;col++){
-if(flag==0){
-setcolor(YELLOW);
-setfillstyle(SOLID_FILL,BLACK);
-rectangle(x,y,x+50,y+50);
-floodfill(x+1,y+1,YELLOW);
-flag=1;
-}
-else
+void print_chessboard(char (*a)[8])
 {
-setcolor(YELLOW);
-setfillstyle(SOLID_FILL,WHITE);
-rectangle(x,y,x+50,y+50);
-floodfill(x+1,y+1,YELLOW);
-flag=0;
-}
-x=x+50;
-}
-if(flag==0)
-flag=1;
-else
-flag=0;
-delay(100);
-x=50;
-y=50+y;
-}
-getch();
-closegraph();
+	int i, j;
+
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			if (j == 7)
+			{
+				_putchar(a[i][j]);
+				_putchar('\n');
+			}
+			else
+				_putchar(a[i][j]);
+		}
+	}
 }
