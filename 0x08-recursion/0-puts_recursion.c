@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "brkti.h"
 
 /**
  *_puts_recursion - print string
@@ -17,6 +17,3 @@ return;
 _putchar(s[0]);
 _puts_recursion(s + 1);
 }
-vi 0-puts_recursion.c
-[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
-
