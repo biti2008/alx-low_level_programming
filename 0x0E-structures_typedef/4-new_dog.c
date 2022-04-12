@@ -1,46 +1,19 @@
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C5-free_dog.c
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
- * new_dog - check the code for Holberton School students.
- * @name: naming
- * @age: age number
- * @owner: ownership
+ * free_dog - check the code for Holberton School students.
+ * @d: decimal
  * Return: Always 0.
  */
-dog_t *new_dog(char *name, float age, char *owner)
+void free_dog(dog_t *d)
 {
-int i = 0, j = 0, k;
-dog_t *d;
-while (name[i] != '\0')
-i++;
-while (owner[j] != '\0')
-j++;
-d = malloc(sizeof(dog_t));
-if (d == NULL)
+if (d)
 {
-free(d);
-return (NULL);
-}
-d->name = malloc(i *sizeof(d->name));
-if (d->name == NULL)
-{
+if (d->name)
 free(d->name);
-free(d);
-return (NULL);
-}
-for (k = 0; k <= i; k++)
-d->name[k] = name[k];
-d->age = age;
-d->owner = malloc(j *sizeof(d->owner));
-if (d->owner == NULL)
-{
+if (d->owner)
 free(d->owner);
-free(d->name);
 free(d);
-return (NULL);
 }
-for (k = 0; k <= j; k++)
-d->owner[k] = owner[k];
-return (d);
 }
