@@ -87,5 +87,3 @@ void print_class(unsigned char *e_ident)
 	}
 }
 
-/**
- * print_data - Prints the data
