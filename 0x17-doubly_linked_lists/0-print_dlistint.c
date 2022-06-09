@@ -1,4 +1,4 @@
-[A[A[B[B#include "lists.h"
+#include "lists.h"
 
 /**
  * print_dlistint - prints all the elements of a
