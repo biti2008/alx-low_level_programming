@@ -1,22 +1,29 @@
-[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C7-puts_half.c
 #include "main.h"
 
 /**
-* puts_half - prints the second half of a string.
-*@str: string to use.
-*/
+ * rev_string - reverse string
+ * @s: string
+ * Return: void
+ */
 
-void puts_half(char *str)
+void rev_string(char *s)
 {
-int length, n, i;
+	int i, max, half;
+	char first, last;
 
-for (length = 0; str[length] != '\0'; length++)
-{
-}
-n = (length - 1) / 2;
-for (i = n + 1; str[i] != '\0'; i++)
-{
-_putchar(str[i]);
-}
-_putchar('\n');
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	max = i - 1;
+	half = max / 2;
+	while (half >= 0)
+	{
+		first = s[max - half];
+		last = s[half];
+		s[half] = first;
+		s[max - half] = last;
+		half--;
+	}
 }
