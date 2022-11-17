@@ -1,31 +1,26 @@
 #include "main.h"
 
 /**
- *print_number - print a number using _putchar.
- *@n: the number to be printed.
+ * leet - encode
+ * @s: pointer to char params
+ * Return: *s
  */
 
-void print_number(int n)
+char *leet(char *s)
 {
-	unsigned int i = 1;
+	int i;
+	int j;
+	char l[] = "ol_ea__t";
 
-	if (n < 0)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		_putchar('-');
-		n *= -1;
-	}
-	if (n == 0)
-		_putchar('0');
-	else
+	for (j = 0; l[j] != '\0'; j++)
 	{
-		while ((n / i) >= 10)
-			i *= 10;
-
-		while (i > 0)
-		{
-			_putchar((n / i) + '0');
-			n %= i;
-			i /= 10;
-		}
+	if (s[i] == l[j] || s[i] == (l[j] - 32))
+	{
+	s[i] = j + '0';
 	}
+	}
+	}
+	return (s);
 }
