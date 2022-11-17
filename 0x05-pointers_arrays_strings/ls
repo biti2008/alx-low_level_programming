@@ -1,0 +1,178 @@
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~
+$ ls
+ 0x01-Fix_My_Code_Challenge-master/
+'3D Objects'/
+ AirBnB_clone/
+ AirBnB_clone_v2/
+ AirBnB_clone_v3/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ alx-higher_level_programming/
+ alx-low_level_programming/
+ alx-pre_course/
+ alx-system_engineering-devops/
+ idman641build2.exe*
+ mintty.exe.stackdump
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~
+$ cd alx-low_level_programming
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming (main)
+$ ls
+0x00-hello_world/                  0x0D-preprocessor/
+0x01-variables_if_else_while/      0x0E-structures_typedef/
+0x02-functions_nested_loops/       0x0F-function_pointers/
+0x03-debugging/                    0x10-variadic_functions/
+0x04-more_functions_nested_loops/  0x12-singly_linked_lists/
+0x05-pointers_arrays_strings/      0x13-more_singly_linked_lists/
+0x06-pointers_arrays_strings/      0x14-bit_manipulation/
+0x07-pointers_arrays_strings/      0x15-file_io/
+0x08-recursion/                    0x17-doubly_linked_lists/
+0x09-static_libraries/             0x18-dynamic_libraries/
+0x0A-argc_argv/                    0x1A-hash_tables/
+0x0B-malloc_free/                  0x1C-makefiles/
+0x0C-more_malloc_free/             0x1E-search_algorithms/
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming (main)
+$ cd 0x00-hello_world
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ ls
+0-preprocessor*  100-intel*   2-assembler*  4-puts.c    6-size.c
+1-compiler*      101-quote.c  3-name*       5-printf.c  README.md
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ rm -rf 101-quote.c
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ ls
+0-preprocessor*  100-intel*    3-name*   5-printf.c  README.md
+1-compiler*      2-assembler*  4-puts.c  6-size.c
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ cat > 101-quote.c
+#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 1 (Error)
+ */
+int main(void)
+{
+        write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+        return (1);
+}
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ chmode u+x 101-quote.c
+bash: chmode: command not found
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ chmod u+x 101-quote.c
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ git add --chmod=+x 101-quote.c
+warning: in the working copy of '0x00-hello_world/101-quote.c', LF will be replaced by CRLF the next time Git touches it
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ git commit -m "My commit"
+[main 89c1aa0] My commit
+ Committer: Birktiy Tesfay <Birktiy.Tesfay@safaricom.et>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 10 insertions(+), 6 deletions(-)
+gi
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 490 bytes | 490.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/biti2008/alx-low_level_programming.git
+   9a9fcf2..89c1aa0  main -> main
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ ls
+0-preprocessor*  100-intel*   2-assembler*  4-puts.c    6-size.c
+1-compiler*      101-quote.c  3-name*       5-printf.c  README.md
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x00-hello_world (main)
+$ cd ..
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming (main)
+$ ls
+0x00-hello_world/                  0x0D-preprocessor/
+0x01-variables_if_else_while/      0x0E-structures_typedef/
+0x02-functions_nested_loops/       0x0F-function_pointers/
+0x03-debugging/                    0x10-variadic_functions/
+0x04-more_functions_nested_loops/  0x12-singly_linked_lists/
+0x05-pointers_arrays_strings/      0x13-more_singly_linked_lists/
+0x06-pointers_arrays_strings/      0x14-bit_manipulation/
+0x07-pointers_arrays_strings/      0x15-file_io/
+0x08-recursion/                    0x17-doubly_linked_lists/
+0x09-static_libraries/             0x18-dynamic_libraries/
+0x0A-argc_argv/                    0x1A-hash_tables/
+0x0B-malloc_free/                  0x1C-makefiles/
+0x0C-more_malloc_free/             0x1E-search_algorithms/
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming (main)
+$ cd 0x05-pointers_arrays_strings
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x05-pointers_arrays_strings (main)
+$ ls
+0-reset_to_98.c  101-keygen.c  4-print_rev.c   7-puts_half.c    README.md
+1-swap.c         2-strlen.c    5-rev_string.c  8-print_array.c  main.h
+100-atoi.c       3-puts.c      6-puts2.c       9-strcpy.c
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x05-pointers_arrays_strings (main)
+$ vi 7-puts_half.c
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x05-pointers_arrays_strings (main)
+$ rm -rf 7-puts_half.c
+
+Birktiy.Tesfay@LPCONT0011 MINGW64 ~/alx-low_level_programming/0x05-pointers_arrays_strings (main)
+$ cat >
